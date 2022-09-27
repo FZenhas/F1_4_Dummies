@@ -1,0 +1,437 @@
+body{
+    font-family:'Arial Narrow', Arial, sans-serif;
+    text-align: justify;  
+    background-color: #fbe9b353; 
+}
+
+header{
+    background-color: #dece9c;  
+}
+
+/*----------------- NAV ----------------*/
+.dropdown-menu{
+    background-color: #dece9c;
+    margin-top: 0;
+}
+.dropdown-item {
+    font-family: 'Rubik Dirt', cursive;
+    color: #000000;
+    font-variant: small-caps;
+}
+.dropdown-item:active {
+    background-color: #dece9c;
+
+}
+
+.navbar-toggler{
+    color: #dece9c;
+    background-color: #cdbe8f;
+}
+
+.nav-link{
+    color: black;
+    font-variant: small-caps;
+    font-size: large;
+    font-family: 'Rubik Dirt', cursive;
+}
+
+.nav-link:hover{
+    color:#E10600;
+}
+#logo:hover{
+    background-color: #dece9c;
+}
+
+/*------------------ MAIN -----------------*/
+main h1{
+    text-align: center;
+    font-variant: small-caps;
+    color: maroon;
+    text-shadow: 3px 3px 6px rgba(80, 2, 2, 0.547);
+    font-family: 'Rubik Dirt', cursive;
+}
+
+main h2{
+font-variant: small-caps;
+font-size: large;
+font-weight: bold;
+}
+
+main h5{
+    font-size: medium;
+    font-weight: bold;
+}
+
+.container{
+    border: none;
+    background-color: white;
+}
+
+/*------------------ PAG INICIAL --------------*/
+#picPilotos {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 100%;
+}
+
+#video{
+   margin: auto;
+   display: block;
+   width: 10%;
+}
+
+/*-----------------F1-------------*/
+
+.clearfix-F1{
+    padding-top: 30px;
+}
+
+#F1pic{
+   border-radius: 8px;  
+   opacity: 0.9; 
+}
+
+#F1pic:hover {
+    transform: scaleX(-1);
+}
+
+/*------------------- PILOTOS -----------------*/
+.flip-card-container{
+    width: 250px;
+    height: 350px;
+    perspective: 1000px;
+    margin:auto;
+    padding-bottom: 15px;
+}
+
+.flip-card{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.flip-card-container:hover .flip-card{
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.flip-card-front{
+    background-color: #20615b;
+    color: #dece9c;
+}
+
+.flip-card-back{
+    background-color: #dece9c;
+    color: #20615b;
+    transform: rotateY(180deg);
+    flex-direction: column;
+}
+.flip-card-front img{
+    width: 95%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.flip-card-back h2{
+    font-weight: bold;
+    font-size:larger;
+}
+
+
+.flip-card-back p{
+    margin: 1rem;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-size:medium;
+    text-align: center;
+    line-height: 2px;
+}
+
+.flip-card-back a{
+    font-size: 1.2em;
+    border: 1px solid #20615b;;
+    color: rgba(2, 30, 2, 0.937);
+    padding: 7px;
+    border-radius: 100%;
+}
+
+.flip-card-back a:hover{
+    border: 1px solid rgba(2, 30, 2, 0.937);
+    color:  #20615b;;
+}
+
+/*-------------- CLASSIFICACAO---------------*/
+#classificacao{
+    margin: auto;
+}
+
+/*--------------- CONSTRUTORES E CIRCUITO -------------*/
+
+#construtores{
+    background-color: black;
+    color: white;
+}
+
+#contrutores-a a{
+    color: rgb(194, 16, 16) ;
+}
+#contrutores-a a:hover{
+    color: white;
+}
+
+#pic-car{
+    width: 100%;
+    position: relative;
+    animation: mymove 6s;
+    animation-iteration-count: calc(2);
+  }
+  
+  @keyframes mymove {
+    from {right: 200px;}
+    to {right: 0px;}
+  }
+
+.card{
+    background-color: black;
+    color: white;
+    margin:auto;
+    margin-bottom: 20px;
+}  
+
+.card:hover{
+    background-color: white;
+    color: #000000;
+}
+
+.card-title{
+    font-weight: bold;
+    font-size: medium;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(194, 16, 16);
+}
+.card-text{
+    text-align: center;
+    line-height: 10px;
+}
+.card-body a{
+    color:rgb(194, 16, 16);
+}
+
+.card-body a:hover{
+        color: black;
+}
+
+#circuito{
+    border: 1px solid rgb(52, 0, 0);
+    border-radius: 4px;
+    padding: 5px;
+    width: 100%;
+}
+  
+ #circuito:hover {
+    box-shadow: 4px 3px 3px rgba(186, 0, 0, 0.5);
+ }
+
+.podium-border{
+    border: 1px rgb(194, 16, 16);
+    border-style: solid;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+/*----------- PIT STOP -------------------*/
+
+#img-pitstop{
+    height: 380px;
+    background-image: url('../Img/pitstop/pitstop.jpg');
+    background-repeat:no-repeat;
+    background-size: cover ;
+}
+
+/*------------- PILOTOS ICONICOS--------------*/
+
+.btn{
+    font-weight: bold;
+    font-variant: small-caps;
+    background-color: rgb(182, 194, 127);
+    color: black;
+}
+
+.carousel{
+    width: 80%;
+    margin: auto;
+}
+.carousel-caption {
+    background-color:black;
+}
+
+.column{
+    color: whitesmoke;
+}
+.carousel h2{
+    font-variant: small-caps;
+    font-size: larger;
+    font-weight: bolder;
+    color:wheat;
+}
+.background {
+    background: url(klematis.jpg) repeat;
+}
+    
+.transbox {
+    margin: 30px;
+    background-color: #ffffff;
+    opacity: 0.6;
+}
+      
+.transbox p {
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+}
+
+/* --------- QUIZZ -------------*/
+
+.container-quizz {
+    position: relative;
+    width: 100%;
+  
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box; 
+  }
+  .column-quizz {
+    margin-bottom: 1.5rem;
+    width: 100%;
+    float: left;
+    box-sizing: border-box; 
+  }
+
+  @media (min-width: 640px) {
+    .container-quizz {
+      width: 90%;
+      padding: 0; }
+    .column-quizz {
+      margin-left: 4%; }
+    .column-quizz:first-child {
+      margin-left: 0; }
+  
+    .full-width.column-quizz             { width: 100%; margin-left: 0; }  
+  
+    .one-half.column-quizz                { width: 48%; }
+  
+    .one-third.column-quizz               { width: 30.6666666667%; }
+    .two-thirds.column-quizz              { width: 65.3333333333%; }
+  
+    .one-quarter.column-quizz             { width: 22%; }
+    .two-quarter.column-quizz             { width: 48%; }
+    .three-quarter.column-quizz           { width: 74%; }
+  
+    .one-half.column-quizz                { width: 48%; }
+  
+  }
+  
+  .container-quizz:after,
+  .row:after,
+  .clearfix {
+    content: "";
+    display: table;
+    clear: both; }
+
+  #question-2, #question-3, #question-4, #question-5, #question-6{
+    display: none;
+  }
+
+  .button {
+    margin: 10px 0 0 0;
+    float: none;
+    cursor:pointer;
+  
+    font-size: 1em;
+    border: none;
+    padding: 5px 10px;
+    line-height: 18px;
+
+    border-radius: 3px;
+    vertical-align: baseline;
+    background: maroon;
+    color: white;
+    text-decoration: none !important;
+    display: inline-block;
+   
+  }
+  
+  .button:hover {
+    background-color: black !important;
+    color: white;
+  }
+  .center {
+    text-align: center;
+  }
+  
+  .questions_box {
+    background-color: rgb(247, 228, 193);
+    padding: 60px;
+    text-align: left;
+    max-width: 960px;
+    box-sizing: border-box;
+  }
+  .questions_box{
+    color: #000000;
+  }
+
+  #progress_bar {
+    background-color: maroon;
+    width: 20%;
+    height: 10px;
+    transition: all 100ms ease-in-out;
+  }
+  #printscoreinfo{
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  #picQuizz{
+    border: 1px solid maroon;
+    border-radius: 4px;
+    padding: 3px;
+    width: 40%;
+}
+h3{
+    font-weight: bold;  
+}
+.bi{
+    color: maroon;
+}
+
+/*--------------- FOOTER---------------*/
+
+footer{
+    background-color: #E10600 ;
+    color: black;
+    font-weight:bold;
+    padding:10px;
+}
+footer i{
+    padding: 5px;
+}
+
+footer i:hover{
+    color: white;
+}
+
+
